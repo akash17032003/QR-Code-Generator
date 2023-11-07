@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <h1>QR Code Generator</h1>
+    <div class="container">
+        <p>Enter your URL :</p>
+        <input type="text" placeholder="URL" id="qrText">
+        <div class="img-container">
+            <img src="" id="qrImage">
+        </div>
+        <button onclick="generateQR()">Generate QR Code</button>
+    </div>
+    <script>
+        let imgBox = document.querySelector(".img-container");
+        let qrImage = document.getElementById("qrImage");
+        let qrText = document.getElementById("qrText");
+
+        function generateQR() {
+            qrImage.src = "https://barcodeapi.org/api/auto/" + qrText.value;
+            imgBox.classList.add("show-img");
+        }
+    </script>
+</body>
+</html>

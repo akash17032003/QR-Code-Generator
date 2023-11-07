@@ -1,0 +1,78 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark theme styles */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+input[type="text"] {
+    padding-bottom: 20px;
+    width: 85%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #333333;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.show-img {
+    display: block;
+}
+
+.img-container {
+    text-align: center; /* Center the QR code */
+    margin-top: 20px; /* Add some spacing */
+}
+
+#wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    background-color: #2b2b2b;
+}
